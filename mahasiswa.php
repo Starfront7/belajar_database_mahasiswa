@@ -1,5 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+<?php
+    include "TampilanHeader.php";
+    include "koneksi.php";
+?>
 
 <head>
     <title>Data Nilai siswa</title>
@@ -10,22 +14,6 @@
 </head>
 
 <body>
-
-    <nav class="navbar navbar-expand-sm bg-light">
-        <div class="container-fluid">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.php">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="mahasiswa.php">Mahasiswa</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="matakuliah.php">Mata-kuliah</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
     <h3>Data Nilai siswa</h3>
     <form action="create3.php" method="POST">
         <label for="nim">NIM :</label>
@@ -52,7 +40,7 @@
             <input type="text" class="form-control" id="thajar" name="thajar" placeholder="Masukkan alamat" required>
         </div>
 
-        <button type="submit" name="SUbmit" class="btn btn-primary">Simpan</button>
+        <button type="submit" name="submit" class="btn btn-primary">Simpan</button>
     </form>
 
 

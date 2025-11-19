@@ -23,6 +23,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="matakuliah.php">Mata-kuliah</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="table_edit.php">table pendaftraran</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="table_mk.php">table mata kuliah</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="table_nilai.php">table nilai </a>
+                </li>
             </ul>
         </div>
     </nav>

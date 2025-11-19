@@ -1,4 +1,4 @@
-<?php 
+<?php
 include "koneksi.php";
 
 if (isset($_POST['submit'])) {
@@ -7,13 +7,14 @@ if (isset($_POST['submit'])) {
     $tgl_lahir = $_POST['tgl_lahir'];
     $alamat = $_POST['alamat'];
 
-    $sql = "INSERT INTO mhs (nim, nama, tgl_lahir, alamat) 
+    $sql = "INSERT INTO mhs (nim, nama, tgl_lahir, alamat)
             VALUES ('$nim', '$nama', '$tgl_lahir', '$alamat')";
 
-    if ($conn->query($sql) === TRUE) {
-        echo "Data berhasil disimpan";
+    if (mysqli_query($conn, $sql)) {
+        header("Location: table_edit.php");
+        exit();
     } else {
-        echo "Error: " . $sql . $conn->error;
+        echo "Error: " . mysqli_error($conn);
     }
 }
 ?>
